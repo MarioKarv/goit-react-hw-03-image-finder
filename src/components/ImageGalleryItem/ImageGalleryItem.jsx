@@ -18,7 +18,7 @@ class ImageGalleryItem extends Component {
       <li className={css.ImageGalleryItem}>
         <img
           src={webformatURL}
-          alt="image"
+          alt="img"
           onClick={this.onModal}
           className={css.ImageGalleryItemImage}
         />
