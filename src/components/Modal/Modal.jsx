@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import PropTypes from 'prop-types';
 import { createPortal } from 'react-dom';
+import css from './Modal.module.css'
 
 const ModalRoot = document.querySelector('#ModalRoot');
 
@@ -28,8 +29,8 @@ class Modal extends Component {
   render() {
     const { largeImageURL } = this.props.image;
     return createPortal(
-      <div class="overlay" onClick={this.onOverlayClose}>
-        <div class="modal">
+      <div className={css.Overlay} onClick={this.onOverlayClose}>
+        <div className={css.Modal}>
           <img src={largeImageURL} alt="image" />
         </div>
       </div>,
