@@ -19,7 +19,7 @@ class Searchbar extends Component {
   };
 
   render() {
-    const { inputData } = this.state.inputData;
+    const { inputData } = this.state;
     return (
       <header className={css.Searchbar}>
         <form className={css.SearchForm} onSubmit={this.handleSubmit}>
